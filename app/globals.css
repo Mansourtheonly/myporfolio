@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+}
+
+.slide-top {
+  animation: slide-top 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-top-1000 {
+  animation: slide-top 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-top-1250 {
+  animation: slide-top 3.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-top-1500 {
+  animation: slide-top 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-top-1750 {
+  animation: slide-top 3.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-top-2000 {
+  animation: slide-top 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-top-2250 {
+  animation: slide-top 4.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-top-2500 {
+  animation: slide-top 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-top-2750 {
+  animation: slide-top 4.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /*gutter size*/
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
