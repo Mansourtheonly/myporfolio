@@ -52,7 +52,7 @@ const data = [
       { id: 26, name: "Postgres", image: "/skills/postgresql.png" }
     ],
     // source_code: "http://github.com/link",
-    demo: "buytuq.vercel.app",
+    demo: "https://buytuq.vercel.app",
   },
 ];
 export default data;
